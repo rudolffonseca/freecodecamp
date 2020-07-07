@@ -1,0 +1,36 @@
+body {
+  font-family: BlinkMacSystemFont;
+  font-size: 18px;
+}
+
+#main {
+  background: lightgray;
+  margin: 20px 0px 20px 0px;
+  display: grid;
+  grid-template-rows: auto auto
+}
+
+#title {
+  text-align: center;
+}
+
+#img-div {
+  margin: 2rem;
+  background-color: white;
+  display: grid;
+}
+#image {
+  width: 100%;
+  height: auto;
+}
+
+#img-caption {
+  text-align: center;
+  padding: 10px;
+}
+
+#history {
+  text-align: justify;
+  padding-left: 3vw;
+  padding-right: 4vw;
+}
