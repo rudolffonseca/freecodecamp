@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+<body>
+  
+  <!--this div servers just to set a background color-->
+  <div id="back-color"></div>
+  
+  <div id="container">
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description"><em>Thank you for taking the time for help us improve the plataform</em></p>
+    </header>
+
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name">Name:</label><br>
+          <input type="text" 
+                 id="name" 
+                 class="text-input"
+                 placeholder=" Enter your name" 
+                 name="name"
+                 required><br>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">e-Mail:</label><br>
+          <input type="email" class="text-input" id="email" name="email" placeholder=" Enter your e-mail" required><br>
+      </div>
+      
+      <div class="form-group">
+        <label for="number">Age (Optional):</label><br>
+          <input type="number" class="text-input" id="number" name="age" min="10" max="99" pattern="[\d]{2}" placeholder=" Enter your age"><br>
+      </div>
+      
+      <div class="form-group">
+        <label for="c-role">Which option best describes your current role?</label><br>
+        <select id="dropdown" class="text-input" name="role">
+          <option value="" 
+                selected
+                disabled>Select current role</option>
+          <option value="student">Student</option>
+          <option value="ftjob">Full Time Job</option>
+          <option value="ftlearner">Full Time Learner</option>
+          <option value="pnts">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Would you recomend freeCodeCamp to a friend?</label><br>
+        <input type="radio"
+               id="definitely" 
+               name="friend" 
+               value="definitely">
+        <label for="definitely">Definitely</label><br>
+        <input type="radio" id="maybe" name="friend" value="maybe">
+        <label for="maybe">Maybe</label><br>
+        <input type="radio" id="notsure" name="friend" value="notsure">
+        <label for="notsure">Not sure</label><br>
+      </div>
+      
+      <div class="form-group">
+        <label for="feature">What is your favorite feature of freeCode Camp?</label><br>
+        <select id="feature" class="text-input" name="option">
+          <option selected disabled>Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="opensource">Open Source</option>
+        </select><br>
+      </div>
+      
+      <div class="form-group">
+        <label>What would you like to see improved? (Check all that apply)</label><br>
+          <input type="checkbox" name="imp1" value="fep">
+            <label>Front-end Projects</label><br>
+          <input type="checkbox" name="imp2" value="bep">
+            <label>Back-end Projects</label><br>
+          <input type="checkbox" name="imp3" value="data">
+            <label>Data Visualization</label><br>
+          <input type="checkbox" name="imp4" value="chal">
+            <label>Challenges</label><br>
+          <input type="checkbox" name="imp5" value="osc">
+            <label>Open Source Community</label><br>
+          <input type="checkbox" name="imp6" value="ghr">
+            <label>Gitter help rooms</label><br>
+          <input type="checkbox" name="imp7" value="vid">
+            <label>Videos</label><br>
+          <input type="checkbox" name="imp8" value="meet">
+            <label>City Meetups</label><br>
+          <input type="checkbox" name="imp9" value="wiki">
+            <label>Wiki</label><br>
+          <input type="checkbox" name="imp8" value="forum">
+            <label>Forum</label><br>
+          <input type="checkbox" name="imp9" value="add">
+            <label>Additional Courses</label><br>
+      </div>
+      
+      <div class="form-group">
+        <label for="comments">Any comments or suggestions?</label><br>
+        <textarea id="comments"
+                  class="text-input"
+                  name="comment" 
+                  rows="4"> Enter your comment here...
+        </textarea><br>
+      </div>
+      
+      <input type="submit" class="text-input" value="Submit!" style="background-color: green; color: white;">
+    </form>
+  </div>
+</body>
+
+</html>
