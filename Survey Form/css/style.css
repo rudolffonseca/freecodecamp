@@ -1,0 +1,53 @@
+body {
+  font-family: 'Roboto';
+  background-color: rgba(100, 64, 147, 0.8);
+  background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-blend-mode: cover;
+  position: static;
+}
+
+#back-color {
+  background-color: rgba(50, 50, 200, 0.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: -1;
+}
+
+#container {
+  color: white;
+}
+
+#title {
+  text-align: center;
+  font-size: 35px;
+}
+
+#description {
+  text-align: center;
+  text-shadow: 3px 3px 2px gray;
+  font-size: 18px;
+}
+
+#survey-form {
+  background-color: rgb(20, 20, 90);
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.text-input {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
