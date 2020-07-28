@@ -1,0 +1,200 @@
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+section {
+
+}
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: gray;
+    position: relative;
+    bottom: -8px;
+    width: 80%;
+    height: 50px;
+    margin: auto;
+}
+
+.nav-link {
+    
+}
+
+#header-img {
+    width: 450px;
+    height: auto;
+    top: 5px;
+}
+
+#nav-bar {
+    font-size: 20px;
+    display: inline;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    width: 417px;
+    height: 56px;
+    padding: 0 50px 0 0;
+    margin: auto;
+    float: right;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    color: black;
+    display: inline-block;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+li a:hover {
+    background-color: orange;
+}
+
+#title-div {
+    width: max-content;
+    margin: 50px auto 0 auto;
+}
+
+#title {
+    font-size: 27px;
+    text-align: center;
+    display: inline-block;
+;
+}
+
+#form {
+    margin: 10px auto 100px auto;
+    width: 300px;
+    text-align: center;
+}
+
+#email {
+    width: 90%;
+}
+
+#submit {
+    background-color: orange;
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    border: none;
+}
+
+#icon-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 65%;
+    margin: auto;
+}
+
+#icon-grid p {
+    margin-top: 0;
+}
+
+.icon {
+}
+
+.text {
+    padding-top: 0;
+    padding-left: 10px;
+}
+
+#icon-grid img {
+    width: 50px;
+    height: auto;
+}
+
+#video {
+    width: min-content;
+    height: min-content;
+    margin: 100px auto 100px auto;
+}
+
+#flex-box {
+    width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 280px 280px 280px;
+    grid-template-rows: 350px;
+    grid-gap: 30px;
+}
+
+.boxes {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    text-align: center;
+}
+
+.boxes h2 {
+    font-weight: 400;
+    text-align: center;
+    background-color: lightgrey;
+    margin-top: 0;
+    padding: 15px;
+}
+
+.boxes h3 {
+    font-size: 30px;
+    position: relative;
+    top: -50px;
+}
+
+.boxes p {
+    position: relative;
+    top: -60px;
+    margin-top: 0;
+}
+
+.boxes button {
+    background-color: orange;
+    border-style: solid;
+    border-width: 1px;
+    position: relative;
+    top: 240px;
+}
+
+@media only screen and (max-width: 940px) {
+    #nav-bar {
+        display: grid;
+    }
+    #header-img {
+        width: 450px;
+        height: auto;
+        top: 5px;       
+    }
+    header {
+        text-align: center;
+    }
+
+    #icon-grid {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    #video iframe {
+        width: 450px;
+        height: 254px;
+    }
+
+    #flex-box {
+        width: 280px;
+        grid-template-columns: 280px;
+        grid-template-rows: 350px 350px 350px;
+    }
+}
