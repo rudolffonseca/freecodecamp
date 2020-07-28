@@ -1,4 +1,4 @@
-<h2> Responsive Web Design Certification (Projects):</h2> <br>
+<h3> Responsive Web Design Certification (Projects):</h3> <br>
   Reference: https://www.freecodecamp.org/learn/ <br>
   <br>
   Tribute Page: https://rudolffonseca.github.io/freecodecamp/TributePage/tribute.html <br>
