@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'VT323';
+    src: url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background-color: lawngreen;
+    height: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+#navbar img {
+    
+}
+
+.buttons {
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+
+#navbar button {
+    background-color: black;
+    color: lawngreen;
+    font-family: 'VT323';
+    font-size: 20px;
+    font-weight: 700;
+    width: 10vw;
+    min-width: 70px;
+    height: 30px;
+    margin-right: 2vw;
+    border-radius: 15px;
+    font-size-adjust: inherit;
+}
+
+
+#navbar button:hover {
+    background-color: orange;
+    color: black !important;
+}
+#navbar a { text-decoration: none; }
+#navbar a:visited { color: lawngreen;}
+
+#welcome-section {
+    background-color: black;
+    position: relative;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+#welcome-section h1 {
+    padding-top: 15vh;
+    text-align: center;
+    font-family: 'VT323';
+    color: lawngreen;
+    font-size: 5vw;
+    margin: 0;
+}
+
+#welcome-section img {
+    position: absolute;
+    top: 40vh;
+    left: 25vw;
+    width: 50vw;
+    height: auto;
+}
+
+#projects {
+    background-color: black;
+    position: relative;
+    top: -20px;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#projects-heading {
+    flex-basis: 100vw;
+    text-align: center;
+    font-family: 'VT323';
+    color: lawngreen;
+    font-size: 5vw;
+    padding-top: 100px;
+    margin: 0;
+}
+
+.project-box {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.project-title {
+    font-family: 'vt323';
+    font-size: 15px;
+    color: lawngreen;
+    text-decoration: none;
+    text-align: center;
+}
+
+.project-link {
+    background-color: black;
+    margin: 0;
+    position: relative;
+    top: 100%;
+}
+
+#profile-link {
+    background-color: lawngreen;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    min-height: min-content;
+    text-align: center;
+    font-family: 'VT323';
+    font-size: 30px;
+    text-decoration: none;
+    vertical-align: middle;
+
+}
+
+@media (max-width: 800px) {
+    #navbar button {
+        font-size: 15px;
+    }
+    .buttons {
+        width: min-content;
+        top: 5px;
+    }
+}
