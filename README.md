@@ -7,3 +7,9 @@
   Technical Documentation Page: https://rudolffonseca.github.io/freecodecamp/documentation/tech-doc-page.html <br>
   Personal Portifolio WebPage: https://rudolffonseca.github.io/freecodecamp/personal-portifolio/personal-portifolio.html <br>
   
+<h3> Front End Development Libraries (Projects):</h3> <br>
+  Reference: https://www.freecodecamp.org/learn/front-end-development-libraries/ <br>
+  
+  Random Quote Machine: https://rudolffonseca.github.io/freecodecamp/randomquotemachine <br>
+  Markdown Previewer: https://rudolffonseca.github.io/freecodecamp/
+  
