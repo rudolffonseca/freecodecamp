@@ -1,0 +1,93 @@
+body {
+  background-color: #8ECAE6;
+}
+
+@mixin textareaStyle {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 80%;
+  bottom: 0px;
+  resize: vertical;
+} 
+
+@mixin x-wide-position($bool, $preview) {
+  position: relative;
+  margin: auto;
+  @if $bool == true {
+    @if $preview == true {
+      width: 750px;
+    }
+    @else {
+      width: 600px;
+    }
+  }
+  @else {
+    @if $preview == true {
+      width: 100%;
+    }
+    @else {
+      width: 80%;      
+    }
+  }
+}
+
+@mixin vertical-middle {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.previewerSize {
+  margin: 0;
+  @include x-wide-position(false, true);
+}
+
+.editorSize {
+  margin: 0;
+  @include x-wide-position(false, false);
+}
+
+@media screen and (min-width: 800px) {
+  .previewerSize {
+  margin: 0;
+  @include x-wide-position(true, true);
+}
+  .editorSize {
+    margin: 0;
+    @include x-wide-position(true, false);
+  }  
+}
+
+textarea {
+  @include textareaStyle;
+}
+
+textarea:focus {
+  @include textareaStyle;
+  outline: 0px;
+}
+
+
+
+.navmenu {
+  position: relative;
+  height: 30px;
+  background-color: #023047;
+  color: white;
+  
+  button {
+    right: 1%;
+    @include vertical-middle;
+  }
+  
+  span {
+    left: 1%;
+    @include vertical-middle;
+  }
+}
+
+#preview > * {
+  margin: 0;
+}
